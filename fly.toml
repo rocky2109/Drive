@@ -1,0 +1,16 @@
+app = "gdrive-downloader-bot"
+primary_region = "lhr"
+
+[build]
+  image = "python:3.10"
+
+[env]
+  API_ID = "REPLACE_ME"
+  API_HASH = "REPLACE_ME"
+  BOT_TOKEN = "REPLACE_ME"
+
+[deploy]
+  release_command = "python main.py"
+
+[experimental]
+  auto_rollback = true
